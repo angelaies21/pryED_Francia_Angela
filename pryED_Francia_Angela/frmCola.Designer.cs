@@ -101,42 +101,44 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(191, 171);
+            this.btnAgregar.BackColor = System.Drawing.Color.Bisque;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregar.Location = new System.Drawing.Point(184, 171);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(92, 32);
+            this.btnAgregar.Size = new System.Drawing.Size(99, 32);
             this.btnAgregar.TabIndex = 3;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Text = "➡️​Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblTramiteNv
             // 
             this.lblTramiteNv.AutoSize = true;
-            this.lblTramiteNv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTramiteNv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTramiteNv.Location = new System.Drawing.Point(15, 143);
             this.lblTramiteNv.Name = "lblTramiteNv";
-            this.lblTramiteNv.Size = new System.Drawing.Size(53, 16);
+            this.lblTramiteNv.Size = new System.Drawing.Size(60, 16);
             this.lblTramiteNv.TabIndex = 2;
             this.lblTramiteNv.Text = "Tramite";
             // 
             // lblNomNv
             // 
             this.lblNomNv.AutoSize = true;
-            this.lblNomNv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomNv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomNv.Location = new System.Drawing.Point(15, 88);
             this.lblNomNv.Name = "lblNomNv";
-            this.lblNomNv.Size = new System.Drawing.Size(56, 16);
+            this.lblNomNv.Size = new System.Drawing.Size(62, 16);
             this.lblNomNv.TabIndex = 1;
             this.lblNomNv.Text = "Nombre";
             // 
             // lblCodigNv
             // 
             this.lblCodigNv.AutoSize = true;
-            this.lblCodigNv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigNv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigNv.Location = new System.Drawing.Point(15, 37);
             this.lblCodigNv.Name = "lblCodigNv";
-            this.lblCodigNv.Size = new System.Drawing.Size(51, 16);
+            this.lblCodigNv.Size = new System.Drawing.Size(57, 16);
             this.lblCodigNv.TabIndex = 0;
             this.lblCodigNv.Text = "Código";
             // 
@@ -161,10 +163,10 @@
             // lblTramiteElim
             // 
             this.lblTramiteElim.AutoSize = true;
-            this.lblTramiteElim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramiteElim.Location = new System.Drawing.Point(25, 145);
+            this.lblTramiteElim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTramiteElim.Location = new System.Drawing.Point(16, 149);
             this.lblTramiteElim.Name = "lblTramiteElim";
-            this.lblTramiteElim.Size = new System.Drawing.Size(47, 16);
+            this.lblTramiteElim.Size = new System.Drawing.Size(54, 16);
             this.lblTramiteElim.TabIndex = 6;
             this.lblTramiteElim.Text = "tramite";
             this.lblTramiteElim.Click += new System.EventHandler(this.lblTramiteElim_Click);
@@ -172,10 +174,10 @@
             // lblNomElim
             // 
             this.lblNomElim.AutoSize = true;
-            this.lblNomElim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomElim.Location = new System.Drawing.Point(25, 90);
+            this.lblNomElim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomElim.Location = new System.Drawing.Point(16, 94);
             this.lblNomElim.Name = "lblNomElim";
-            this.lblNomElim.Size = new System.Drawing.Size(56, 16);
+            this.lblNomElim.Size = new System.Drawing.Size(62, 16);
             this.lblNomElim.TabIndex = 5;
             this.lblNomElim.Text = "Nombre";
             this.lblNomElim.Click += new System.EventHandler(this.lblNomElim_Click);
@@ -183,22 +185,24 @@
             // lblCodigElim
             // 
             this.lblCodigElim.AutoSize = true;
-            this.lblCodigElim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigElim.Location = new System.Drawing.Point(25, 39);
+            this.lblCodigElim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigElim.Location = new System.Drawing.Point(16, 43);
             this.lblCodigElim.Name = "lblCodigElim";
-            this.lblCodigElim.Size = new System.Drawing.Size(51, 16);
+            this.lblCodigElim.Size = new System.Drawing.Size(57, 16);
             this.lblCodigElim.TabIndex = 4;
             this.lblCodigElim.Text = "Código";
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(161, 177);
+            this.btnEliminar.BackColor = System.Drawing.Color.Bisque;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(143, 177);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(95, 26);
+            this.btnEliminar.Size = new System.Drawing.Size(113, 26);
             this.btnEliminar.TabIndex = 3;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Text = "🗑️​Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtTramiteElim
             // 
@@ -291,6 +295,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(989, 469);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lstListado);
@@ -300,6 +305,7 @@
             this.Controls.Add(this.grbNvElem);
             this.Name = "frmCola";
             this.Text = "frmCola";
+            this.Load += new System.EventHandler(this.frmCola_Load);
             this.grbNvElem.ResumeLayout(false);
             this.grbNvElem.PerformLayout();
             this.grbElemElim.ResumeLayout(false);

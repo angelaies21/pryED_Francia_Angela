@@ -16,8 +16,7 @@ namespace pryED_Francia_Angela
         {
             InitializeComponent();
         }
-        clsCola objCola = new clsCola();
-        clsNodo objNodo = new clsNodo();
+        
 
 
         private void grbElemElim_Enter(object sender, EventArgs e)
@@ -40,11 +39,31 @@ namespace pryED_Francia_Angela
 
         }
 
+        clsCola objCola = new clsCola();
+        clsNodo objNodo = new clsNodo();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            objNodo.Nombre= txtNomNv.Text;
+
+            objNodo.Codigo = Convert.ToInt32(txtCodigNv.Text);
+            objNodo.Nombre = txtNomNv.Text;
+            objNodo.Tramite= txtTramiteNv.Text;
+
             objCola.Agregar(objNodo);
             objCola.Recorrer(lstListado);
+
+            txtCodigNv.Text = "";
+            txtNomNv.Clear();
+            txtTramiteNv.Clear();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmCola_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
