@@ -7,10 +7,10 @@ using System.Windows.Forms;
 
 namespace pryED_Francia_Angela
 {
-    internal class clsNodo
+    internal class clsNodo //clase nodo
     {
 
-        private clsNodo Primero;
+        private clsNodo Primero; // Referencia al primer nodo de la estructura
         private clsNodo Ultimo;
         private clsNodo Nuevo;
 
@@ -20,7 +20,7 @@ namespace pryED_Francia_Angela
 
         public clsNodo siguiente;
 
-        public int Codigo { get => codigo; set => codigo = value; }
+        public int Codigo { get => codigo; set => codigo = value; } //get : devuelve el valor de la variable, set: asigna un valor a la variable
         public string Nombre { get => nombre; set => nombre = value; }
         public string Tramite { get => tramite; set => tramite = value; }
     
@@ -29,7 +29,7 @@ namespace pryED_Francia_Angela
     
      public void Agregar(clsNodo Nuevo)
         {
-            if (Primero == null)
+            if (Primero == null) //si no hay elementos en la estructura
             {
                 Primero = Nuevo;  //el nuevo elemento pasa a ser el primero
                 
@@ -39,29 +39,28 @@ namespace pryED_Francia_Angela
             else
             {
                 Ultimo.siguiente = Nuevo; // el elem q estaba ultimo ahora apunta al nuevo elem
-                Ultimo = Nuevo; 
+                Ultimo = Nuevo;  // el nuevo elem pasa a ser el ultimo
             }
         }
 
-        public void Eliminar()
+        public void Eliminar() //elimina el primer elemento de la estructura
         {
             if (Primero == null)
             {
-                Primero = null;
+                Primero = null; //si no hay elementos en la estructura, no se puede eliminar nada
                 Ultimo = null;
             }
             else
             {
-                Primero = Primero.siguiente; //el 2do elem pasa a ocupar el lugar del primero
+                Primero = Primero.siguiente; //el primer elem pasa a ser el siguiente del primero (el segundo elem)
             }
         }
 
 
-        public void Recorrer(ListBox lst)  //recibe un listBox para mostrar los datos
-            //el lst es nom de la variable
+        public void Recorrer(ListBox lst)  //recorre el listBox
         {
             clsNodo aux = Primero;
-            lst.Items.Clear(); //items: elem del listBox
+            lst.Items.Clear(); //limpia el listBox para que no se repitan los datos
             while (aux != null)
             {
                 lst.Items.Add($"{aux.Codigo} {aux.Nombre} {aux.Tramite}"); //agrega un elem al listBox
@@ -73,11 +72,11 @@ namespace pryED_Francia_Angela
         public void Recorrer(DataGridView dgv) //recoore el cuadro
         {
             clsNodo aux = Primero;
-            dgv.Rows.Clear(); //rows son las filas
-            while (aux != null)
+            dgv.Rows.Clear(); //limpia el cuadro para que no se repitan los datos
+            while (aux != null) //mientras aux sea distinto de null, recorre la estructura
             {
-                dgv.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite); 
-                aux = aux.siguiente ;
+                dgv.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);  //agrega un elem al cuadro
+                aux = aux.siguiente ; 
             }
         }
 

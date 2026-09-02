@@ -200,10 +200,12 @@
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "🗑️​Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtTram
             // 
             this.txtTram.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtTram.Enabled = false;
             this.txtTram.Location = new System.Drawing.Point(89, 139);
             this.txtTram.Name = "txtTram";
             this.txtTram.Size = new System.Drawing.Size(184, 22);
@@ -212,6 +214,7 @@
             // txtNom
             // 
             this.txtNom.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtNom.Enabled = false;
             this.txtNom.Location = new System.Drawing.Point(89, 90);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(184, 22);
@@ -220,6 +223,7 @@
             // txtCodigElim
             // 
             this.txtCodigElim.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtCodigElim.Enabled = false;
             this.txtCodigElim.Location = new System.Drawing.Point(89, 37);
             this.txtCodigElim.Name = "txtCodigElim";
             this.txtCodigElim.Size = new System.Drawing.Size(184, 22);

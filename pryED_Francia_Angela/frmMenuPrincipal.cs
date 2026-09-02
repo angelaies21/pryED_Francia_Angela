@@ -22,5 +22,11 @@ namespace pryED_Francia_Angela
             frmCola ventana = new frmCola();
             ventana.ShowDialog();
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila ventana = new frmPila();
+            ventana.ShowDialog();
+        }
     }
 }

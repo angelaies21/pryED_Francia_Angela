@@ -90,31 +90,31 @@
             // nombreYApellidoToolStripMenuItem
             // 
             this.nombreYApellidoToolStripMenuItem.Name = "nombreYApellidoToolStripMenuItem";
-            this.nombreYApellidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nombreYApellidoToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.nombreYApellidoToolStripMenuItem.Text = "Nombre y apellido";
             // 
             // carreraToolStripMenuItem
             // 
             this.carreraToolStripMenuItem.Name = "carreraToolStripMenuItem";
-            this.carreraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.carreraToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.carreraToolStripMenuItem.Text = "Carrera";
             // 
             // materiaToolStripMenuItem
             // 
             this.materiaToolStripMenuItem.Name = "materiaToolStripMenuItem";
-            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.materiaToolStripMenuItem.Text = "Materia";
             // 
             // comisiónToolStripMenuItem
             // 
             this.comisiónToolStripMenuItem.Name = "comisiónToolStripMenuItem";
-            this.comisiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.comisiónToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.comisiónToolStripMenuItem.Text = "Comisión";
             // 
             // añoAcademicoToolStripMenuItem
             // 
             this.añoAcademicoToolStripMenuItem.Name = "añoAcademicoToolStripMenuItem";
-            this.añoAcademicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.añoAcademicoToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.añoAcademicoToolStripMenuItem.Text = "Año academico";
             // 
             // salirToolStripMenuItem1
@@ -146,6 +146,7 @@
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
             this.pilaToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.pilaToolStripMenuItem.Text = "Pila";
+            this.pilaToolStripMenuItem.Click += new System.EventHandler(this.pilaToolStripMenuItem_Click);
             // 
             // listaEnlazadaSimpleToolStripMenuItem
             // 
