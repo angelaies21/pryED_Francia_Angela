@@ -17,7 +17,7 @@ namespace pryED_Francia_Angela
             InitializeComponent();
         }
 
-        clsCola objCola = new clsCola();
+        clsPila objPila = new clsPila();
         private void btnAgregarPila_Click(object sender, EventArgs e) 
         {
 
@@ -27,13 +27,13 @@ namespace pryED_Francia_Angela
             nuevo.Nombre = txtNomPila.Text; // Asignar el texto del TextBox a la propiedad Nombre del nodo
             nuevo.Tramite=txtTramitePila.Text; // Asignar el texto del TextBox a la propiedad Tramite del nodo
 
-            objCola.Agregar(nuevo); // Agregar el nodo a la cola
+            objPila.Agregar(nuevo); // Agregar el nodo a la cola
 
             lstPila.Items.Clear(); // Limpiar el ListBox antes de recorrer la cola nuevamente
-            objCola.Recorrer(lstPila); // Recorrer la cola y mostrar los elementos en el ListBox
+            objPila.Recorrer(lstPila); // Recorrer la cola y mostrar los elementos en el ListBox
 
             dgvTablaPila.Rows.Clear(); // Limpiar el DataGridView antes de recorrer la cola nuevamente
-            objCola.Recorrer(dgvTablaPila); // Recorrer la cola y mostrar los elementos en el DataGridView
+            objPila.Recorrer(dgvTablaPila); // Recorrer la cola y mostrar los elementos en el DataGridView
 
             txtCodigPila.Clear();
             txtNomPila.Clear();
@@ -47,7 +47,7 @@ namespace pryED_Francia_Angela
         {
 
             
-            clsNodo elim = objCola.verPrimero(); // Obtener el primer nodo de la cola sin eliminarlo
+            clsNodo elim = objPila.verPrimero (); // Obtener el primer nodo de la pila sin eliminarlo
             if (elim == null)
             {
                 MessageBox.Show("No hay elementos para eliminar");
@@ -58,14 +58,19 @@ namespace pryED_Francia_Angela
                 txtNom.Text = elim.Nombre; // Asignar el nombre del nodo al TextBox correspondiente
                 txtTram.Text = elim.Tramite;
 
-                objCola.Eliminar();
+                objPila.Eliminar();
                 lstPila.Items.Clear();
                 dgvTablaPila.Rows.Clear();
-                objCola.Recorrer(lstPila);
-                objCola.Recorrer(dgvTablaPila);
+                objPila.Recorrer(lstPila);
+                objPila.Recorrer(dgvTablaPila);
 
 
             }
+        }
+
+        private void grbNvElem_Enter(object sender, EventArgs e)
+        {
+
         }
     }
     

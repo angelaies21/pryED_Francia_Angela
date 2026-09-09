@@ -75,6 +75,7 @@
             this.grbNvElem.TabIndex = 1;
             this.grbNvElem.TabStop = false;
             this.grbNvElem.Text = "Nuevo elemento";
+            this.grbNvElem.Enter += new System.EventHandler(this.grbNvElem_Enter);
             // 
             // txtTramitePila
             // 
