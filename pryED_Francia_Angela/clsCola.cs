@@ -34,7 +34,8 @@ namespace pryED_Francia_Angela
         public void Recorrer(ListBox lstLista) //recorre el listBox
         {
             clsNodo aux = primero; //crea un nodo auxiliar que apunta al primer nodo de la cola
-            while (aux != null) 
+            lstLista.Items.Clear();
+            while (aux != null)
             {
                 lstLista.Items.Add(aux.Codigo); //agrega el código del nodo al listBox
                 aux = aux.siguiente;
@@ -44,6 +45,7 @@ namespace pryED_Francia_Angela
         public void Recorrer(DataGridView dgvTabla)
         {
             clsNodo aux = primero;
+            dgvTabla.Rows.Clear();
             while (aux != null)
             {
                 dgvTabla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite); //agrega el código, nombre y trámite del nodo al dataGridView
@@ -52,32 +54,61 @@ namespace pryED_Francia_Angela
             }
         }
 
-        public void Eliminar ()
+        public void Eliminar()
         {
             if (primero == null)
             {
-                MessageBox.Show("el espacio está vacio");
-
+                MessageBox.Show("La cola está vacía");
             }
             else
             {
-                primero = primero.siguiente; //el primer nodo pasa a ser el siguiente del primer nodo (el segundo nodo)
+                primero = primero.siguiente; // El segundo pasa a ser el primero
 
-                if (primero == null) //si el primer nodo es nulo, significa que la cola está vacía, por lo que el último nodo también debe ser nulo
+                if (primero == null)
                 {
-                    ultimo = null; //el último nodo también es nulo
+                    ultimo = null; // Si no quedan elementos, la cola queda vacía
                 }
             }
         }
 
-
-        public clsNodo verPrimero()
+        public void Recorrerla(ListBox lst)
         {
-            return primero;  //devuelve el primer nodo de la cola para poder ver sus datos
+            clsNodo aux = primero;
+
+            lst.Items.Clear(); // Limpia el ListBox
+
+            while (aux != null)
+            {
+                lst.Items.Add(
+                    $"{aux.Codigo} {aux.Nombre} {aux.Tramite}"
+                ); //agg los datos a la tabla
+
+                aux = aux.siguiente; // Avanza al siguiente nodo
+            }
         }
 
+        // RECORRER Y MOSTRAR EN EL DATAGRIDVIEW
+        public void RecorrerMos(DataGridView dgv)
+        {
+            clsNodo aux = primero;
 
+            dgv.Rows.Clear(); // Limpia la tabla
 
+            while (aux != null)
+            {
+                dgv.Rows.Add(
+                    aux.Codigo,
+                    aux.Nombre,
+                    aux.Tramite
+                );
 
+                aux = aux.siguiente; // Avanza al siguiente nodo
+            }
+        }
     }
+
 }
+
+
+
+

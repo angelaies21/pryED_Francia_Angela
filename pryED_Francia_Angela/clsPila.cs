@@ -10,6 +10,7 @@ namespace pryED_Francia_Angela
     internal class clsPila
     {
         private clsNodo primero;
+        
         public void Agregar(clsNodo nuevo)
         {
             nuevo.siguiente = primero;

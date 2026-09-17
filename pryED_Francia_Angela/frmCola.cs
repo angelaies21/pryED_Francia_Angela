@@ -16,8 +16,8 @@ namespace pryED_Francia_Angela
         {
             InitializeComponent();
         }
-        
 
+        clsPila objPila = new clsPila();
 
         private void grbElemElim_Enter(object sender, EventArgs e)
         {
@@ -40,10 +40,10 @@ namespace pryED_Francia_Angela
         }
 
         clsCola objCola = new clsCola();
-        clsNodo objNodo = new clsNodo();
+        
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            clsNodo objNodo = new clsNodo();
             objNodo.Codigo = Convert.ToInt32(txtCodigNv.Text);
             objNodo.Nombre = txtNomNv.Text;
             objNodo.Tramite= txtTramiteNv.Text;
@@ -59,6 +59,25 @@ namespace pryED_Francia_Angela
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
+            clsNodo elim = objPila.verPrimero(); // Obtener el primer nodo de la pila sin eliminarlo
+            if (elim == null)
+            {
+                MessageBox.Show("No hay elementos para eliminar");
+            }
+            else
+            {
+                txtCodigElim.Text = elim.Codigo.ToString(); // Convertir el código del nodo a cadena y asignarlo al TextBox correspondiente
+                txtNomElim.Text = elim.Nombre; // Asignar el nombre del nodo al TextBox correspondiente
+                txtTramiteElim .Text = elim.Tramite;
+
+                objPila.Eliminar();
+                lstListado.Items.Clear();
+                dgvTabla.Rows.Clear();
+                objPila.Recorrer(lstListado);
+                objPila.Recorrer(dgvTabla);
+
+
+            }
         }
 
         private void frmCola_Load(object sender, EventArgs e)
