@@ -72,6 +72,11 @@ namespace pryED_Francia_Angela
         {
 
         }
+
+        private void dgvTablaPila_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     
 }

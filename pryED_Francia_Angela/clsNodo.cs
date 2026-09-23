@@ -19,6 +19,7 @@ namespace pryED_Francia_Angela
         private string tramite;
 
         public clsNodo siguiente;
+        public clsNodo Anterior;
 
         public int Codigo { get => codigo; set => codigo = value; } //get : devuelve el valor de la variable, set: asigna un valor a la variable
         public string Nombre { get => nombre; set => nombre = value; }

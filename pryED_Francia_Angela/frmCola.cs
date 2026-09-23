@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace pryED_Francia_Angela
 {
@@ -48,39 +49,51 @@ namespace pryED_Francia_Angela
             objNodo.Nombre = txtNomNv.Text;
             objNodo.Tramite= txtTramiteNv.Text;
 
+            lstListado.Items.Clear();
+            dgvTabla.Rows.Clear();
+
             objCola.Agregar(objNodo);
             objCola.Recorrer(lstListado);
+            objCola.Recorrer(dgvTabla);
 
             txtCodigNv.Text = "";
             txtNomNv.Clear();
             txtTramiteNv.Clear();
+            txtCodigNv.Focus();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
-            clsNodo elim = objPila.verPrimero(); // Obtener el primer nodo de la pila sin eliminarlo
-            if (elim == null)
+            clsNodo elimina = objCola.verPrimero();
+
+            if (elimina == null)
             {
                 MessageBox.Show("No hay elementos para eliminar");
             }
             else
             {
-                txtCodigElim.Text = elim.Codigo.ToString(); // Convertir el código del nodo a cadena y asignarlo al TextBox correspondiente
-                txtNomElim.Text = elim.Nombre; // Asignar el nombre del nodo al TextBox correspondiente
-                txtTramiteElim .Text = elim.Tramite;
+                txtCodigElim.Text = elimina.Codigo.ToString();
+                txtNomElim.Text = elimina.Nombre;
+                txtTramiteElim.Text = elimina.Tramite;
 
-                objPila.Eliminar();
+                objCola.Eliminar();
+
                 lstListado.Items.Clear();
                 dgvTabla.Rows.Clear();
-                objPila.Recorrer(lstListado);
-                objPila.Recorrer(dgvTabla);
 
-
+                objCola.Recorrer(lstListado);
+                objCola.Recorrer(dgvTabla);
             }
         }
+        
 
         private void frmCola_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvTabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

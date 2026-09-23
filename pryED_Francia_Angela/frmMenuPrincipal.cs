@@ -28,5 +28,18 @@ namespace pryED_Francia_Angela
             frmPila ventana = new frmPila();
             ventana.ShowDialog();
         }
+
+        private void listaDoblementeEnlazadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            frmDobleEnlanzada ventana = new frmDobleEnlanzada();
+            ventana.ShowDialog();
+        }
+
+        private void listaEnlazadaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple ventana = new frmListaSimple();
+            ventana.ShowDialog();
+        }
     }
 }

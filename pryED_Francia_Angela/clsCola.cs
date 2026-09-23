@@ -51,7 +51,9 @@ namespace pryED_Francia_Angela
                 dgvTabla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite); //agrega el código, nombre y trámite del nodo al dataGridView
 
                 aux = aux.siguiente;
+
             }
+           
         }
 
         public void Eliminar()
@@ -105,8 +107,14 @@ namespace pryED_Francia_Angela
                 aux = aux.siguiente; // Avanza al siguiente nodo
             }
         }
-    }
+    
 
+    public clsNodo verPrimero()
+        {
+            return primero; //sirve p q el formulario pueda consultar cual es el nodo
+        }   
+
+    }
 }
 
 

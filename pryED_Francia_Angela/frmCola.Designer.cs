@@ -207,6 +207,7 @@
             // txtTramiteElim
             // 
             this.txtTramiteElim.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtTramiteElim.Enabled = false;
             this.txtTramiteElim.Location = new System.Drawing.Point(89, 139);
             this.txtTramiteElim.Name = "txtTramiteElim";
             this.txtTramiteElim.Size = new System.Drawing.Size(184, 22);
@@ -215,6 +216,7 @@
             // txtNomElim
             // 
             this.txtNomElim.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtNomElim.Enabled = false;
             this.txtNomElim.Location = new System.Drawing.Point(89, 90);
             this.txtNomElim.Name = "txtNomElim";
             this.txtNomElim.Size = new System.Drawing.Size(184, 22);
@@ -224,6 +226,7 @@
             // txtCodigElim
             // 
             this.txtCodigElim.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtCodigElim.Enabled = false;
             this.txtCodigElim.Location = new System.Drawing.Point(89, 37);
             this.txtCodigElim.Name = "txtCodigElim";
             this.txtCodigElim.Size = new System.Drawing.Size(184, 22);
@@ -250,6 +253,7 @@
             this.dgvTabla.Name = "dgvTabla";
             this.dgvTabla.Size = new System.Drawing.Size(555, 189);
             this.dgvTabla.TabIndex = 4;
+            this.dgvTabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTabla_CellContentClick);
             // 
             // Column1
             // 

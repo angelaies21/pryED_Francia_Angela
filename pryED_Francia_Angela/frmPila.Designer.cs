@@ -195,7 +195,7 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Bisque;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(160, 186);
+            this.btnEliminar.Location = new System.Drawing.Point(164, 180);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(113, 32);
             this.btnEliminar.TabIndex = 3;
@@ -250,6 +250,7 @@
             this.dgvTablaPila.Name = "dgvTablaPila";
             this.dgvTablaPila.Size = new System.Drawing.Size(526, 187);
             this.dgvTablaPila.TabIndex = 7;
+            this.dgvTablaPila.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTablaPila_CellContentClick);
             // 
             // Column1
             // 

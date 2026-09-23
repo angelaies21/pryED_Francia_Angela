@@ -46,14 +46,16 @@ namespace pryED_Francia_Angela
 
         public void Recorrer(DataGridView dgvTabla)
         {
-            clsNodo aux= primero;
+            clsNodo aux = primero;
+
+            dgvTabla.Rows.Clear();
 
             while (aux != null)
             {
-                dgvTabla.Rows.Add(aux.Codigo + " - " + aux.Nombre + " - " + aux.Tramite + " - ");
+                dgvTabla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+
                 aux = aux.siguiente;
             }
-
         }
 
         public clsNodo verPrimero()
