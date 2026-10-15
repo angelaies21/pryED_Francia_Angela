@@ -41,5 +41,17 @@ namespace pryED_Francia_Angela
             frmListaSimple ventana = new frmListaSimple();
             ventana.ShowDialog();
         }
+
+        private void mostrarUnaTablaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMostrarTabla ventana = new frmMostrarTabla();
+            ventana.ShowDialog();
+        }
+
+        private void consultaDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaBD ventana = new frmConsultaBD();
+            ventana.ShowDialog();
+        }
     }
 }

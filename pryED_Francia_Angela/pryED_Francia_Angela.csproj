@@ -50,12 +50,19 @@
     <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
+    <Compile Include="clsParteDOS.cs" />
     <Compile Include="clsPila.cs" />
     <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCola.Designer.cs">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaBD.Designer.cs">
+      <DependentUpon>frmConsultaBD.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDobleEnlanzada.cs">
       <SubType>Form</SubType>
@@ -75,6 +82,12 @@
     <Compile Include="frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMostrarTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarTabla.Designer.cs">
+      <DependentUpon>frmMostrarTabla.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +99,9 @@
     <EmbeddedResource Include="frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaBD.resx">
+      <DependentUpon>frmConsultaBD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDobleEnlanzada.resx">
       <DependentUpon>frmDobleEnlanzada.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarTabla.resx">
+      <DependentUpon>frmMostrarTabla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPila.resx">
       <DependentUpon>frmPila.cs</DependentUpon>
